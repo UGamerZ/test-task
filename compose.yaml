@@ -59,10 +59,12 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PORT: ${APP_PORT}
+      API_KEY: ${API_KEY}
       NODE_ENV: production
 
     ports:
       - ${APP_PORT}:${APP_PORT}
+      - 3000:3000
 
     depends_on:
       postgres:

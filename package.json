@@ -8,11 +8,9 @@
         "dev": "nodemon --watch src --ext ts --exec tsx src/app.ts",
         "watch:build": "tsc --build --force --verbose --watch",
         "knex:dev": "tsx src/utils/knex.ts",
-
         "build": "tsc --allowJs",
         "start": "node dist/app.js",
         "knex": "node dist/utils/knex.js",
-        
         "tsc:check": "tsc --allowJs --noEmit",
         "prettier": "prettier --config .prettierrc.json src/**/*.js --check",
         "prettier-format": "prettier --config .prettierrc.json src/**/*.js --write",
@@ -31,6 +29,7 @@
     "author": "lucard17",
     "license": "ISC",
     "dependencies": {
+        "axios": "^1.10.0",
         "commander": "^13.1.0",
         "dotenv": "^16.3.1",
         "googleapis": "^144.0.0",
